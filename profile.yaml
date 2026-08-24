@@ -1,0 +1,27 @@
+# Perfil de Javi — condicionamiento para baloncesto/pádel, sin gimnasio.
+# Entrevista completada; cribado médico limpio (5/5 negativo).
+schema_version: 1
+locale: es
+units: kg
+goals:
+  - sport_conditioning_basketball_padel   # primario: condición física (pérdida de peso vía dieta)
+  - general_health
+priority_muscles: []    # objetivos de músculo: más adelante
+experience: novice      # nunca gimnasio ni trabajo funcional; fondo previo de baloncesto
+frequency: 4
+session_minutes: 60     # normal 60-90; semana mala 30 (tier 40)
+environment: bodyweight
+equipment:
+  - low_bar_or_table    # mesa robusta en casa (remada invertida)
+  - partner_or_anchor   # anclar tobillos (mueble pesado) para nordic curl
+  - running_route       # calle para correr
+injuries: []
+dislikes: []
+preferences:
+  machine_vs_free: bodyweight_only
+red_line_screen:
+  chest_pain: false
+  dizziness: false
+  acute_injury: false
+  night_pain: false
+  clinician_restriction: false

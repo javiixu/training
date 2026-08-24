@@ -1,0 +1,61 @@
+# Plan Javi — 4 días: 2 fuerza full-body + 2 carrera.
+# Semana 1 (24-30 ago 2026). Textos en español; locale es soportado vía i18n es.yaml.
+schema_version: 1
+profile: profile.yaml
+locale: es
+units: kg
+split: ABCD
+
+sessions:
+  - id: fuerza_a
+    name: "Día 1 · Fuerza A"
+    subtitle: "Cuerpo completo: empuje, tirón, sentadilla"
+    hard_stop:
+      60: "En el minuto 50, salta directo al plank final estés donde estés"
+      90: "En el minuto 78, salta directo al plank final"
+    items:
+      - {ref: general_cardio_warmup, tier: 40, slot: warmup, sets: 1, reps: "5 min", rest_sec: 0}
+      - {ref: scapular_pushup, tier: 40, slot: warmup, sets: 2, reps: "10", rest_sec: 30}
+      - {ref: push_up, tier: 40, slot: main, sets: 3, reps: "6-12", rest_sec: 90, rir: "deja 1-2 en reserva"}
+      - {ref: inverted_row, tier: 40, slot: main, sets: 3, reps: "6-12", rest_sec: 90, rir: "deja 1-2 en reserva"}
+      - {ref: bodyweight_squat, tier: 40, slot: main, sets: 3, reps: "10-15", rest_sec: 90}
+      - {ref: calf_raise_single_leg, tier: 60, slot: isolation, sets: 3, reps: "12-15 por lado", rest_sec: 60}
+      - {ref: front_plank, tier: 40, slot: core, sets: 2, reps: "30-40 s", rest_sec: 45}
+
+  - id: carrera_intervalos
+    name: "Día 2 · Carrera con series"
+    subtitle: "Acondicionamiento: 30 s fuerte / 90 s suave"
+    hard_stop:
+      60: "En el minuto 50, corta las series y vuelve caminando/trotando suave"
+      90: "En el minuto 78, corta las series y vuelve trotando suave"
+    items:
+      - {ref: leg_swings, tier: 40, slot: warmup, sets: 2, reps: "10 por lado", rest_sec: 0}
+      - {ref: run_intervals, tier: 40, slot: main, sets: 2, reps: "4 × (30 s fuerte / 90 s suave) por serie", rest_sec: 120}
+      - {ref: side_plank, tier: 40, slot: core, sets: 1, reps: "20-30 s por lado", rest_sec: 30}
+
+  - id: fuerza_b
+    name: "Día 3 · Fuerza B"
+    subtitle: "Cuerpo completo: empuje inclinado, tirón, zancada"
+    hard_stop:
+      60: "En el minuto 50, salta directo al plank final estés donde estés"
+      90: "En el minuto 78, salta directo al plank final"
+    items:
+      - {ref: general_cardio_warmup, tier: 40, slot: warmup, sets: 1, reps: "5 min", rest_sec: 0}
+      - {ref: worlds_greatest_stretch, tier: 40, slot: warmup, sets: 2, reps: "4 por lado", rest_sec: 0}
+      - {ref: incline_push_up, tier: 40, slot: main, sets: 3, reps: "8-12", rest_sec: 90}
+      - {ref: inverted_row, tier: 40, slot: main, sets: 3, reps: "6-12", rest_sec: 90, rir: "deja 1-2 en reserva"}
+      - {ref: reverse_lunge, tier: 40, slot: main, sets: 3, reps: "8-10 por lado", rest_sec: 90}
+      - {ref: single_leg_glute_bridge, tier: 60, slot: isolation, sets: 2, reps: "10-12 por lado", rest_sec: 60}
+      - {ref: calf_raise_single_leg, tier: 60, slot: isolation, sets: 3, reps: "12-15 por lado", rest_sec: 60}
+      - {ref: front_plank, tier: 40, slot: core, sets: 2, reps: "30-40 s", rest_sec: 45}
+
+  - id: carrera_continua
+    name: "Día 4 · Trote continuo"
+    subtitle: "Acondicionamiento suave: ritmo conversacional"
+    hard_stop:
+      60: "En el minuto 50, corta y vuelve caminando"
+      90: "En el minuto 78, corta y vuelve caminando"
+    items:
+      - {ref: leg_swings, tier: 40, slot: warmup, sets: 2, reps: "10 por lado", rest_sec: 0}
+      - {ref: run_steady, tier: 40, slot: main, sets: 1, reps: "25-35 min", rest_sec: 0}
+      - {ref: side_plank, tier: 40, slot: core, sets: 1, reps: "20-30 s por lado", rest_sec: 30}
