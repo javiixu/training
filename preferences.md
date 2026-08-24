@@ -15,7 +15,7 @@
 
 ## Diet & restrictions
 - **Allergies (hard exclusions):** ninguna conocida
-- **Dislikes / never serve:** brócoli, lentejas (lista creciente — ir añadiendo según feedback)
+- **Dislikes / never serve:** brócoli, lentejas, judías verdes (lista creciente — ir añadiendo según feedback)
 - **Eating pattern:** pérdida de peso, déficit calórico, proteína alta
 
 ## Goals / macros
