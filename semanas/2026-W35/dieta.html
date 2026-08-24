@@ -46,6 +46,14 @@
   .notes ul{margin:.3rem 0 0;padding-left:1.1rem;font-size:.93rem}
   .notes li{margin:.3rem 0}
   footer{max-width:880px;margin:0 auto;padding:0 1rem 2.5rem;color:var(--muted);font-size:.8rem}
+  @media (min-width:900px){
+    nav{justify-content:center;flex-wrap:wrap}
+    section.day{display:grid;grid-template-columns:1fr 1fr;gap:.6rem .7rem}
+    section.day>h2,section.day>.daysub,section.day>.daytotal{grid-column:1/-1}
+    section.day>.card{margin:0}
+    .grocery ul.shop{display:grid;grid-template-columns:1fr 1fr;gap:0 2.5rem}
+    .notes ul{display:grid;grid-template-columns:1fr 1fr;gap:.3rem 2.5rem}
+  }
   @media print{nav{display:none}body{background:#fff}.card,.grocery,.notes{break-inside:avoid}}
 </style>
 </head>
