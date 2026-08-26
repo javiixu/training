@@ -14,7 +14,8 @@ sessions:
       60: "En el minuto 50, salta directo al plank final estés donde estés"
       90: "En el minuto 78, salta directo al plank final"
     items:
-      - {ref: general_cardio_warmup, tier: 40, slot: warmup, sets: 1, reps: "5 min", rest_sec: 0}
+      - {ref: cat_camel, tier: 40, slot: warmup, sets: 1, reps: "8-10", rest_sec: 0}
+      - {ref: leg_swings, tier: 40, slot: warmup, sets: 2, reps: "10 por lado", rest_sec: 0}
       - {ref: scapular_pushup, tier: 40, slot: warmup, sets: 2, reps: "10", rest_sec: 30}
       - {ref: push_up, tier: 40, slot: main, sets: 3, reps: "6-12", rest_sec: 90, rir: "deja 1-2 en reserva"}
       - {ref: inverted_row, tier: 40, slot: main, sets: 3, reps: "6-12", rest_sec: 90, rir: "deja 1-2 en reserva"}
@@ -40,7 +41,8 @@ sessions:
       60: "En el minuto 50, salta directo al plank final estés donde estés"
       90: "En el minuto 78, salta directo al plank final"
     items:
-      - {ref: general_cardio_warmup, tier: 40, slot: warmup, sets: 1, reps: "5 min", rest_sec: 0}
+      - {ref: cat_camel, tier: 40, slot: warmup, sets: 1, reps: "8-10", rest_sec: 0}
+      - {ref: leg_swings, tier: 40, slot: warmup, sets: 2, reps: "10 por lado", rest_sec: 0}
       - {ref: worlds_greatest_stretch, tier: 40, slot: warmup, sets: 2, reps: "4 por lado", rest_sec: 0}
       - {ref: incline_push_up, tier: 40, slot: main, sets: 3, reps: "8-12", rest_sec: 90}
       - {ref: inverted_row, tier: 40, slot: main, sets: 3, reps: "6-12", rest_sec: 90, rir: "deja 1-2 en reserva"}
