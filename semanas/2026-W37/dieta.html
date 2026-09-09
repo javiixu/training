@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dieta · Semana 37 (7–13 sep 2026)</title>
+<style>
+  :root{
+    --ink:#1d2b23; --muted:#5d6b62; --bg:#f4f6f3; --card:#ffffff;
+    --accent:#2f7d4f; --accent-soft:#e3f0e8; --warn:#b3742a; --warn-soft:#f9efdd;
+    --line:#dde4de; --chip:#eef2ee;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+  header{background:var(--accent);color:#fff;padding:1.1rem 1rem 1.2rem}
+  header h1{margin:0;font-size:1.35rem}
+  header p{margin:.25rem 0 0;opacity:.92;font-size:.92rem}
+  .targets{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .targets span{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);padding:.15rem .6rem;border-radius:999px;font-size:.82rem}
+  nav{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);display:flex;gap:.25rem;overflow-x:auto;padding:.45rem .6rem}
+  nav a{flex:0 0 auto;text-decoration:none;color:var(--ink);background:var(--chip);padding:.3rem .7rem;border-radius:999px;font-size:.88rem}
+  nav a:hover{background:var(--accent-soft)}
+  main{max-width:880px;margin:0 auto;padding:1rem 1rem 3rem}
+  section.day{margin:0 0 1.6rem;scroll-margin-top:3.4rem}
+  h2{font-size:1.12rem;margin:0 0 .1rem}
+  .daysub{color:var(--muted);font-size:.88rem;margin:0 0 .7rem}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.8rem .95rem;margin:.55rem 0}
+  .card h3{margin:0;font-size:.95rem;display:flex;justify-content:space-between;gap:.6rem;align-items:baseline}
+  .card .tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+  .card p{margin:.4rem 0 0;font-size:.93rem}
+  .macros{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.5rem}
+  .macros span{background:var(--chip);border-radius:6px;padding:.1rem .5rem;font-size:.8rem;font-variant-numeric:tabular-nums}
+  .macros .kcal{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .flag{margin-top:.5rem;background:var(--warn-soft);border-radius:8px;padding:.4rem .6rem;font-size:.85rem}
+  .daytotal{display:flex;justify-content:space-between;background:var(--accent);color:#fff;border-radius:10px;padding:.55rem .9rem;font-variant-numeric:tabular-nums;font-weight:600;margin-top:.7rem}
+  h2.sec{margin:2rem 0 .6rem;font-size:1.2rem}
+  .grocery{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem}
+  .grocery h3{margin:.7rem 0 .35rem;font-size:.95rem;color:var(--accent)}
+  .grocery h3:first-child{margin-top:0}
+  ul.shop{list-style:none;padding:0;margin:0}
+  ul.shop li{padding:.28rem 0;border-bottom:1px dashed var(--line);font-size:.93rem;display:flex;gap:.55rem;align-items:baseline}
+  ul.shop li:last-child{border-bottom:0}
+  ul.shop input{accent-color:var(--accent)}
+  ul.shop li.have label{color:var(--muted)}
+  ul.shop li.have .qty{color:var(--accent);font-weight:600}
+  .qty{color:var(--muted);font-size:.85rem;margin-left:auto;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .notes{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem}
+  .notes ul{margin:.3rem 0 0;padding-left:1.1rem;font-size:.93rem}
+  .notes li{margin:.3rem 0}
+  footer{max-width:880px;margin:0 auto;padding:0 1rem 2.5rem;color:var(--muted);font-size:.8rem}
+  @media (min-width:900px){
+    nav{justify-content:center;flex-wrap:wrap}
+    section.day{display:grid;grid-template-columns:1fr 1fr;gap:.6rem .7rem}
+    section.day>h2,section.day>.daysub,section.day>.daytotal{grid-column:1/-1}
+    section.day>.card{margin:0}
+    .grocery ul.shop{display:grid;grid-template-columns:1fr 1fr;gap:0 2.5rem}
+    .notes ul{display:grid;grid-template-columns:1fr 1fr;gap:.3rem 2.5rem}
+  }
+  @media print{nav{display:none}body{background:#fff}.card,.grocery,.notes{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Dieta · Semana 37 · 7–13 sep 2026</h1>
+  <p>Javi — déficit calórico · tienda: Consum · cocina: sartén + horno · semana para variar: gambas, bacalao, ternera y curry ligero (sin repetir las proteínas de las semanas anteriores)</p>
+  <div class="targets">
+    <span>≈ 2.000 kcal/día</span><span>Proteína ≥ 165 g (suelo)</span><span>Grasa ≤ 70 g (techo)</span>
+  </div>
+</header>
+
+<nav>
+  <a href="#lun">Lun</a><a href="#mar">Mar</a><a href="#mie">Mié</a><a href="#jue">Jue</a><a href="#vie">Vie</a><a href="#sab">Sáb</a><a href="#dom">Dom</a><a href="#compra">Compra</a><a href="#prep">Prep</a>
+</nav>
+
+<main>
+
+<!-- ============ LUNES ============ -->
+<section class="day" id="lun">
+  <h2>Lunes</h2><p class="daysub">Arranque suave: curry ligero de pollo y gambas al ajillo.</p>
+
+  <div class="card"><h3>Tortilla de claras <span class="tag">Desayuno</span></h3>
+    <p>2 huevos + 150 g de claras líquidas, tortilla a la plancha. 1 tostada integral + 1 tomate en rodajas. Café o infusiones a voluntad.</p>
+    <div class="macros"><span class="kcal">420 kcal</span><span>P 38 g</span><span>C 38 g</span><span>G 12 g</span></div>
+  </div>
+
+  <div class="card"><h3>Pollo al curry ligero con arroz <span class="tag">Comida</span></h3>
+    <p>220 g de pechuga en dados dorada con cebolla y calabacín. 1 cucharadita de curry en polvo + pimentón. Para la salsa cremosa: 100 g de skyr natural (nada de nata). 80 g de arroz (en seco) y 10 ml de AOVE.</p>
+    <div class="macros"><span class="kcal">700 kcal</span><span>P 66 g</span><span>C 74 g</span><span>G 15 g</span></div>
+  </div>
+
+  <div class="card"><h3>Queso batido + manzana <span class="tag">Merienda</span></h3>
+    <p>250 g de queso batido 0 % + 1 manzana.</p>
+    <div class="macros"><span class="kcal">200 kcal</span><span>P 25 g</span><span>C 27 g</span><span>G 0 g</span></div>
+  </div>
+
+  <div class="card"><h3>Gambas al ajillo con calabacín y patata <span class="tag">Cena</span></h3>
+    <p>250 g de gambas peladas salteadas a fuego fuerte con ajo laminado, guindilla (al gusto) y perejil. Calabacín salteado + 350 g de patata en dados a la plancha, 5 ml de AOVE y limón.</p>
+    <div class="macros"><span class="kcal">560 kcal</span><span>P 48 g</span><span>C 58 g</span><span>G 8 g</span></div>
+    <div class="flag">Si las gambas son congeladas, pásalas a la nevera el domingo por la noche.</div>
+  </div>
+
+  <div class="daytotal"><span>Total lunes</span><span>≈ 1.880 kcal · P 177 g</span></div>
+</section>
+
+<!-- ============ MARTES ============ -->
+<section class="day" id="mar">
+  <h2>Martes</h2><p class="daysub">Wok de ternera magra y bacalao al horno con pisto.</p>
+
+  <div class="card"><h3>Bowl de skyr con avena <span class="tag">Desayuno</span></h3>
+    <p>250 g de skyr natural + 50 g de copos de avena + 1 plátano en rodajas + canela.</p>
+    <div class="macros"><span class="kcal">450 kcal</span><span>P 34 g</span><span>C 72 g</span><span>G 6 g</span></div>
+  </div>
+
+  <div class="card"><h3>Wok de ternera magra con fideos de arroz <span class="tag">Comida</span></h3>
+    <p>220 g de filetes de ternera magra en tiras, salteados a fuego fuerte con pimiento, cebolla y zanahoria. 60 g de fideos de arroz (en seco). Salsa de soja, jengibre y 10 ml de AOVE.</p>
+    <div class="macros"><span class="kcal">700 kcal</span><span>P 56 g</span><span>C 82 g</span><span>G 14 g</span></div>
+  </div>
+
+  <div class="card"><h3>Skyr + plátano <span class="tag">Merienda</span></h3>
+    <p>250 g de skyr + 1 plátano.</p>
+    <div class="macros"><span class="kcal">230 kcal</span><span>P 28 g</span><span>C 36 g</span><span>G 0 g</span></div>
+  </div>
+
+  <div class="card"><h3>Bacalao al horno con pisto <span class="tag">Cena</span></h3>
+    <p>250 g de lomo de bacalao (15 min a 190 °C) sobre pisto de calabacín, pimiento, cebolla y tomate con ajo. Perejil y 5 ml de AOVE. 1 tostada.</p>
+    <div class="macros"><span class="kcal">520 kcal</span><span>P 52 g</span><span>C 38 g</span><span>G 13 g</span></div>
+    <div class="flag">Si el bacalao es salado, desálalo 24 h antes (o compra lomo ya desalado/fresco).</div>
+  </div>
+
+  <div class="daytotal"><span>Total martes</span><span>≈ 1.900 kcal · P 170 g</span></div>
+</section>
+
+<!-- ============ MIÉRCOLES ============ -->
+<section class="day" id="mie">
+  <h2>Miércoles</h2><p class="daysub">Día de pizza: fajita de pavo; cena de revuelto de espinacas.</p>
+
+  <div class="card"><h3>Tostadas con revuelto y pavo <span class="tag">Desayuno</span></h3>
+    <p>2 tostadas integrales + revuelto de 2 huevos y 100 g de claras + 3 lonchas de pavo + tomate.</p>
+    <div class="macros"><span class="kcal">450 kcal</span><span>P 40 g</span><span>C 38 g</span><span>G 14 g</span></div>
+  </div>
+
+  <div class="card"><h3>Pizza de fajita integral <span class="tag">Comida</span></h3>
+    <p>2 fajitas integrales como base. Cubre con 150 g de tomate triturado, 200 g de pavo picado sofrito con orégano, pimiento, cebolla y champiñón. Mozzarella light por encima y 8–10 min a 200 °C hasta que quede crujiente.</p>
+    <div class="macros"><span class="kcal">745 kcal</span><span>P 66 g</span><span>C 65 g</span><span>G 27 g</span></div>
+    <div class="flag">Cuece el pavo picado antes de montar la pizza; la fajita solo necesita tostarse.</div>
+  </div>
+
+  <div class="card"><h3>Queso batido + fresas <span class="tag">Merienda</span></h3>
+    <p>250 g de queso batido 0 % + 150 g de fresas o frutos rojos.</p>
+    <div class="macros"><span class="kcal">180 kcal</span><span>P 25 g</span><span>C 16 g</span><span>G 0 g</span></div>
+  </div>
+
+  <div class="card"><h3>Revuelto de espinacas y champiñones <span class="tag">Cena</span></h3>
+    <p>Revuelto de 2 huevos + 150 g de claras con espinacas frescas y 200 g de champiñones salteados con ajo. 2 tostadas integrales.</p>
+    <div class="macros"><span class="kcal">530 kcal</span><span>P 48 g</span><span>C 54 g</span><span>G 16 g</span></div>
+  </div>
+
+  <div class="daytotal"><span>Total miércoles</span><span>≈ 1.905 kcal · P 179 g</span></div>
+</section>
+
+<!-- ============ JUEVES ============ -->
+<section class="day" id="jue">
+  <h2>Jueves</h2><p class="daysub">Bandeja al horno con berenjena; ensalada de atún por la noche.</p>
+
+  <div class="card"><h3>Gachas de avena con arándanos <span class="tag">Desayuno</span></h3>
+    <p>60 g de copos de avena cocidos con agua o leche desnatada + 150 g de claras o 1 scoop de proteína + 1 puñado de arándanos + canela.</p>
+    <div class="macros"><span class="kcal">430 kcal</span><span>P 34 g</span><span>C 60 g</span><span>G 9 g</span></div>
+  </div>
+
+  <div class="card"><h3>Bandeja de horno: pollo, patatas y berenjena <span class="tag">Comida</span></h3>
+    <p>220 g de pechuga en filetes + 350 g de patata en gajos + berenjena, pimiento rojo y cebolla. Todo con 10 ml de AOVE, pimentón y 35 min a 200 °C.</p>
+    <div class="macros"><span class="kcal">780 kcal</span><span>P 58 g</span><span>C 86 g</span><span>G 22 g</span></div>
+  </div>
+
+  <div class="card"><h3>Queso batido + fruta <span class="tag">Merienda</span></h3>
+    <p>250 g de queso batido 0 % + 1 pieza de fruta.</p>
+    <div class="macros"><span class="kcal">200 kcal</span><span>P 25 g</span><span>C 27 g</span><span>G 0 g</span></div>
+  </div>
+
+  <div class="card"><h3>Ensalada completa de atún <span class="tag">Cena</span></h3>
+    <p>Base grande de lechuga + 2 latas de atún + 1 huevo cocido + tomate, cebolla y aceitunas + 1 tostada. Aliño: limón y 5 ml de AOVE.</p>
+    <div class="macros"><span class="kcal">590 kcal</span><span>P 52 g</span><span>C 37 g</span><span>G 22 g</span></div>
+  </div>
+
+  <div class="daytotal"><span>Total jueves</span><span>≈ 2.000 kcal · P 169 g</span></div>
+</section>
+
+<!-- ============ VIERNES ============ -->
+<section class="day" id="vie">
+  <h2>Viernes</h2><p class="daysub">Pasta con gambas (aglio e olio ligero) y solomillo de cerdo.</p>
+
+  <div class="card"><h3>Tostadas con atún y tomate <span class="tag">Desayuno</span></h3>
+    <p>2 tostadas integrales + 1 lata de atún al natural + tomate en rodajas + pizca de orégano.</p>
+    <div class="macros"><span class="kcal">430 kcal</span><span>P 38 g</span><span>C 40 g</span><span>G 13 g</span></div>
+  </div>
+
+  <div class="card"><h3>Pasta integral con gambas <span class="tag">Comida</span></h3>
+    <p>80 g de espagueti integral (en seco) + 150 g de gambas salteadas con ajo, guindilla, calabacín en daditos y perejil. 10 ml de AOVE — un aglio e olio ligero, sin nata.</p>
+    <div class="macros"><span class="kcal">720 kcal</span><span>P 52 g</span><span>C 88 g</span><span>G 16 g</span></div>
+    <div class="flag">Descongela las gambas de hoy el jueves por la noche.</div>
+  </div>
+
+  <div class="card"><h3>Skyr + plátano <span class="tag">Merienda</span></h3>
+    <p>250 g de skyr + 1 plátano.</p>
+    <div class="macros"><span class="kcal">230 kcal</span><span>P 28 g</span><span>C 36 g</span><span>G 0 g</span></div>
+  </div>
+
+  <div class="card"><h3>Solomillo de cerdo + verduras asadas <span class="tag">Cena</span></h3>
+    <p>200 g de solomillo de cerdo a la plancha con pimienta y limón. Verduras asadas (pimiento, cebolla y calabacín) con 5 ml de AOVE.</p>
+    <div class="macros"><span class="kcal">560 kcal</span><span>P 50 g</span><span>C 42 g</span><span>G 20 g</span></div>
+  </div>
+
+  <div class="daytotal"><span>Total viernes</span><span>≈ 1.940 kcal · P 168 g</span></div>
+</section>
+
+<!-- ============ SÁBADO ============ -->
+<section class="day" id="sab">
+  <h2>Sábado</h2><p class="daysub">Flex con guía: arroz salteado y cena libre.</p>
+
+  <div class="card"><h3>Tortilla de claras + tostada <span class="tag">Desayuno</span></h3>
+    <p>2 huevos + 150 g de claras en tortilla. 1 tostada integral + tomate.</p>
+    <div class="macros"><span class="kcal">420 kcal</span><span>P 38 g</span><span>C 38 g</span><span>G 12 g</span></div>
+  </div>
+
+  <div class="card"><h3>Arroz salteado con pollo y verduras <span class="tag">Comida</span></h3>
+    <p>80 g de arroz (en seco, cocido en el momento). 220 g de pechuga en tiras salteada con zanahoria, cebolla y pimiento. Soja y 5 ml de AOVE.</p>
+    <div class="macros"><span class="kcal">700 kcal</span><span>P 58 g</span><span>C 82 g</span><span>G 12 g</span></div>
+  </div>
+
+  <div class="card"><h3>Queso batido + fruta <span class="tag">Merienda</span></h3>
+    <p>250 g de queso batido 0 % + fruta.</p>
+    <div class="macros"><span class="kcal">200 kcal</span><span>P 25 g</span><span>C 27 g</span><span>G 0 g</span></div>
+  </div>
+
+  <div class="card"><h3>Cena libre (con guía) <span class="tag">Cena</span></h3>
+    <p>Si sales: proteína principal (carne/pescado/huevos), verduras de guarnición, 1 ración de carbohidrato. Alcohol: máximo 2 copas de vino o 2 cervezas 0,0.</p>
+    <div class="macros"><span class="kcal">≈ 680 kcal</span><span>P ≈ 50 g</span></div>
+    <div class="flag">Fin de semana = proteína justa: si el día se te va corto, asegura un skyr extra antes de dormir.</div>
+  </div>
+
+  <div class="daytotal"><span>Total sábado</span><span>≈ 2.000 kcal · P 171 g</span></div>
+</section>
+
+<!-- ============ DOMINGO ============ -->
+<section class="day" id="dom">
+  <h2>Domingo</h2><p class="daysub">Ensalada templada de pollo con quinoa y tortilla.</p>
+
+  <div class="card"><h3>Bowl de skyr con avena <span class="tag">Desayuno</span></h3>
+    <p>250 g de skyr + 50 g de avena + fruta + canela.</p>
+    <div class="macros"><span class="kcal">450 kcal</span><span>P 34 g</span><span>C 72 g</span><span>G 6 g</span></div>
+  </div>
+
+  <div class="card"><h3>Ensalada templada de pollo con quinoa <span class="tag">Comida</span></h3>
+    <p>220 g de pechuga a la plancha + 60 g de quinoa (en seco). Base de espinacas/lechuga, tomate y pepino. Aliño de limón y 10 ml de AOVE.</p>
+    <div class="macros"><span class="kcal">650 kcal</span><span>P 56 g</span><span>C 62 g</span><span>G 19 g</span></div>
+  </div>
+
+  <div class="card"><h3>Queso batido + plátano <span class="tag">Merienda</span></h3>
+    <p>250 g de queso batido 0 % + 1 plátano.</p>
+    <div class="macros"><span class="kcal">230 kcal</span><span>P 28 g</span><span>C 36 g</span><span>G 0 g</span></div>
+  </div>
+
+  <div class="card"><h3>Tortilla rellena + ensalada <span class="tag">Cena</span></h3>
+    <p>Tortilla de 2 huevos + 200 g de claras rellena de espinacas o champiñones. Ensalada grande de lechuga y tomate + 1 tostada.</p>
+    <div class="macros"><span class="kcal">530 kcal</span><span>P 51 g</span><span>C 42 g</span><span>G 15 g</span></div>
+  </div>
+
+  <div class="daytotal"><span>Total domingo</span><span>≈ 1.860 kcal · P 169 g</span></div>
+  <div class="flag">Día algo por debajo de 2.000: si te quedas con hambre, añade fruta o un skyr extra, no grasa.</div>
+</section>
+
+<!-- ============ COMPRA ============ -->
+<h2 class="sec" id="compra">Lista de la compra — Consum</h2>
+<div class="grocery">
+  <p style="margin:0 0 .3rem;font-size:.88rem;color:var(--muted)">Semana de variar proteínas. Revisa despensa antes de comprar: lo marcado en verde lo tenías en casa otras semanas.</p>
+
+  <h3>Carnicería y pollería</h3>
+  <ul class="shop">
+    <li><label><input type="checkbox"> Pechuga de pollo</label><span class="qty">1 kg (L, J, S, D)</span></li>
+    <li><label><input type="checkbox"> Filetes de ternera magra</label><span class="qty">250 g (M)</span></li>
+    <li><label><input type="checkbox"> Solomillo de cerdo</label><span class="qty">200 g (V)</span></li>
+    <li><label><input type="checkbox"> Pavo picado</label><span class="qty">200 g (X)</span></li>
+    <li><label><input type="checkbox"> Jamón de pavo en lonchas</label><span class="qty">1 paquete (X)</span></li>
+  </ul>
+
+  <h3>Pescadería</h3>
+  <ul class="shop">
+    <li><label><input type="checkbox"> Gambas peladas</label><span class="qty">500 g (L 250 + V 150) — congeladas valen</span></li>
+    <li><label><input type="checkbox"> Lomo de bacalao</label><span class="qty">250 g (M) — fresco o ya desalado</span></li>
+  </ul>
+
+  <h3>Conservas</h3>
+  <ul class="shop">
+    <li><label><input type="checkbox"> Atún en lata (natural)</label><span class="qty">3 latas (J 2, V 1)</span></li>
+    <li><label><input type="checkbox"> Tomate triturado</label><span class="qty">1 brik (M, X)</span></li>
+    <li><label><input type="checkbox"> Aceitunas</label><span class="qty">1 tarro pequeño (J)</span></li>
+    <li><label><input type="checkbox"> Mozzarella light / queso rallado light</label><span class="qty">1 bolsa (X)</span></li>
+  </ul>
+
+  <h3>Lácteos y huevos</h3>
+  <ul class="shop">
+    <li><label><input type="checkbox"> Skyr natural</label><span class="qty">4 × 250 g (M×2, V, D)</span></li>
+    <li><label><input type="checkbox"> Queso batido 0 %</label><span class="qty">4 × 250 g (L, X, J, S) + 1 (D merienda)</span></li>
+    <li><label><input type="checkbox"> Huevos</label><span class="qty">1 docena (~13 usos)</span></li>
+    <li><label><input type="checkbox"> Claras líquidas</label><span class="qty">2 bricks de 500 ml (~800 g)</span></li>
+  </ul>
+
+  <h3>Frutería</h3>
+  <ul class="shop">
+    <li><label><input type="checkbox"> Plátanos</label><span class="qty">4 (M×2, V, D)</span></li>
+    <li><label><input type="checkbox"> Manzanas</label><span class="qty">2 (L)</span></li>
+    <li><label><input type="checkbox"> Fresas o frutos rojos</label><span class="qty">1 bandeja (X)</span></li>
+    <li><label><input type="checkbox"> Arándanos</label><span class="qty">1 tarrina (J)</span></li>
+    <li><label><input type="checkbox"> Tomates</label><span class="qty">8</span></li>
+    <li><label><input type="checkbox"> Calabacines</label><span class="qty">4 (L×2, M, V)</span></li>
+    <li><label><input type="checkbox"> Pimientos rojos/verdes</label><span class="qty">4 (M, X, J, V)</span></li>
+    <li><label><input type="checkbox"> Cebollas</label><span class="qty">4</span></li>
+    <li><label><input type="checkbox"> Ajo</label><span class="qty">1 cabeza</span></li>
+    <li><label><input type="checkbox"> Zanahorias</label><span class="qty">2 (M, S)</span></li>
+    <li><label><input type="checkbox"> Berenjena</label><span class="qty">1 (J)</span></li>
+    <li><label><input type="checkbox"> Champiñones</label><span class="qty">250 g (X)</span></li>
+    <li><label><input type="checkbox"> Espinacas frescas</label><span class="qty">1 bolsa (X, D)</span></li>
+    <li><label><input type="checkbox"> Lechuga</label><span class="qty">2 piezas (X, J, D)</span></li>
+    <li><label><input type="checkbox"> Pepino</label><span class="qty">1 (D)</span></li>
+    <li><label><input type="checkbox"> Patatas</label><span class="qty">1 kg (L, J)</span></li>
+    <li><label><input type="checkbox"> Limones</label><span class="qty">2 (L, M, V)</span></li>
+    <li><label><input type="checkbox"> Perejil</label><span class="qty">1 manojo (L, M, V)</span></li>
+  </ul>
+
+  <h3>Despensa (revisa antes de comprar)</h3>
+  <ul class="shop">
+    <li><label><input type="checkbox"> Quinoa</label><span class="qty">250 g (D) — nueva</span></li>
+    <li><label><input type="checkbox"> Curry en polvo</label><span class="qty">1 bote (L) — nuevo</span></li>
+    <li><label><input type="checkbox"> Copos de avena</label><span class="qty">si falta (M, J, D)</span></li>
+    <li><label><input type="checkbox"> Arroz</label><span class="qty">si falta (L, S)</span></li>
+    <li><label><input type="checkbox"> Fideos de arroz</label><span class="qty">si falta (M)</span></li>
+    <li><label><input type="checkbox"> Pasta integral</label><span class="qty">si falta (V)</span></li>
+    <li><label><input type="checkbox"> Fajitas/tortillas integrales</label><span class="qty">si falta (X)</span></li>
+    <li><label><input type="checkbox"> Pan integral de molde</label><span class="qty">1 paquete</span></li>
+    <li><label><input type="checkbox"> Nueces o almendras</label><span class="qty">1 bolsa (opcional)</span></li>
+    <li><label><input type="checkbox"> Guindilla/cayena, soja, pimentón, canela</label><span class="qty">si falta</span></li>
+    <li><label><input type="checkbox"> AOVE</label><span class="qty">si falta</span></li>
+  </ul>
+</div>
+
+<!-- ============ PREP ============ -->
+<h2 class="sec" id="prep">Preparación y notas</h2>
+<div class="notes">
+  <ul>
+    <li><strong>Descongelar:</strong> gambas del lunes → nevera el domingo noche; gambas del viernes → nevera el jueves noche. Si el bacalao es salado, desálalo 24 h antes del martes.</li>
+    <li><strong>Curry:</strong> compra curry en polvo (bote pequeño) y usa skyr en vez de nata para la salsa — misma cremosidad, mucha menos grasa.</li>
+    <li><strong>Entrenamiento:</strong> 4 sesiones (2 fuerza + 2 carrera). Los días de fuerza no recortes comida: el déficit ya está en el total del día.</li>
+    <li><strong>Espinacas:</strong> mejor frescas, lavadas en el momento; también valen en la ensalada del domingo.</li>
+    <li><strong>Bebe agua</strong> (2–3 litros/día) y mantén el café/infusiones sin azúcar.</li>
+  </ul>
+</div>
+
+<footer>
+  Estimaciones de kcal/macros moderadas — verifica con etiquetas cuando las haya. El plan es editable: cambia platos manteniendo la estructura proteína + carbohidrato + verdura. Generado manualmente para la semana 37 de 2026.
+</footer>
+
+</main>
+</body>
+</html>
