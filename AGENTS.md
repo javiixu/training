@@ -15,6 +15,19 @@ Notas:
 - Skills del proyecto instaladas en `.opencode/skills/` (opencode las
   auto-carga; ver sección siguiente).
 
+## Personas y dietas
+
+El repo gestiona dietas para varias personas, cada una en su carpeta:
+
+- **Javi** (raíz del repo, `preferences.md`): hombre, 24 años, 1,94 m, 110 kg.
+  Objetivo perder peso: déficit calórico ~2.000 kcal/día, proteína ≥ 165 g (suelo),
+  grasa ≤ 70 g (techo). Sin alergias; no servir brócoli, lentejas ni judías verdes.
+  Cocina en sartén + horno, ~20–30 min entre semana. Tienda: Consum (Mercadona evitar).
+- **Filo** (`/filo`): mujer, 59 años, 1,70 m, 105 kg. Déficit calórico, **sin
+  restricciones de comida**. Añadir `preferences.md` propio en esa carpeta.
+
+Nota: las semanas se listan **de más reciente a más vieja** en `index.html`.
+
 ## Skills instaladas
 
 En `.opencode/skills/` del proyecto (auto-cargadas por opencode):

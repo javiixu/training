@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dieta Filo · Semana 37 (7–13 sep 2026)</title>
+<style>
+  :root{
+    --ink:#1d2b23; --muted:#5d6b62; --bg:#f4f6f3; --card:#ffffff;
+    --accent:#2f7d4f; --accent-soft:#e3f0e8; --warn:#b3742a; --warn-soft:#f9efdd;
+    --line:#dde4de; --chip:#eef2ee;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+  header{background:var(--accent);color:#fff;padding:1.1rem 1rem 1.2rem}
+  header h1{margin:0;font-size:1.35rem}
+  header p{margin:.25rem 0 0;opacity:.92;font-size:.92rem}
+  .targets{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+  .targets span{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);padding:.15rem .6rem;border-radius:999px;font-size:.82rem}
+  nav{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);display:flex;gap:.25rem;overflow-x:auto;padding:.45rem .6rem}
+  nav a{flex:0 0 auto;text-decoration:none;color:var(--ink);background:var(--chip);padding:.3rem .7rem;border-radius:999px;font-size:.88rem}
+  nav a:hover{background:var(--accent-soft)}
+  main{max-width:880px;margin:0 auto;padding:1rem 1rem 3rem}
+  section.day{margin:0 0 1.6rem;scroll-margin-top:3.4rem}
+  h2{font-size:1.12rem;margin:0 0 .1rem}
+  .daysub{color:var(--muted);font-size:.88rem;margin:0 0 .7rem}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.8rem .95rem;margin:.55rem 0}
+  .card h3{margin:0;font-size:.95rem;display:flex;justify-content:space-between;gap:.6rem;align-items:baseline}
+  .card .tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+  .card p{margin:.4rem 0 0;font-size:.93rem}
+  .macros{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.5rem}
+  .macros span{background:var(--chip);border-radius:6px;padding:.1rem .5rem;font-size:.8rem;font-variant-numeric:tabular-nums}
+  .macros .kcal{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .flag{margin-top:.5rem;background:var(--warn-soft);border-radius:8px;padding:.4rem .6rem;font-size:.85rem}
+  .daytotal{display:flex;justify-content:space-between;background:var(--accent);color:#fff;border-radius:10px;padding:.55rem .9rem;font-variant-numeric:tabular-nums;font-weight:600;margin-top:.7rem}
+  h2.sec{margin:2rem 0 .6rem;font-size:1.2rem}
+  .grocery{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem}
+  .grocery h3{margin:.7rem 0 .35rem;font-size:.95rem;color:var(--accent)}
+  .grocery h3:first-child{margin-top:0}
+  ul.shop{list-style:none;padding:0;margin:0}
+  ul.shop li{padding:.28rem 0;border-bottom:1px dashed var(--line);font-size:.93rem;display:flex;gap:.55rem;align-items:baseline}
+  ul.shop li:last-child{border-bottom:0}
+  ul.shop input{accent-color:var(--accent)}
+  .qty{color:var(--muted);font-size:.85rem;margin-left:auto;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .notes{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem}
+  .notes ul{margin:.3rem 0 0;padding-left:1.1rem;font-size:.93rem}
+  .notes li{margin:.3rem 0}
+  footer{max-width:880px;margin:0 auto;padding:0 1rem 2.5rem;color:var(--muted);font-size:.8rem}
+  @media (min-width:900px){
+    nav{justify-content:center;flex-wrap:wrap}
+    section.day{display:grid;grid-template-columns:1fr 1fr;gap:.6rem .7rem}
+    section.day>h2,section.day>.daysub,section.day>.daytotal{grid-column:1/-1}
+    section.day>.card{margin:0}
+    .grocery ul.shop{display:grid;grid-template-columns:1fr 1fr;gap:0 2.5rem}
+    .notes ul{display:grid;grid-template-columns:1fr 1fr;gap:.3rem 2.5rem}
+  }
+  @media print{nav{display:none}body{background:#fff}.card,.grocery,.notes{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Dieta Filo · Semana 37 · 7–13 sep 2026</h1>
+  <p>Filo — mujer, 59 años, 1,70 m, 105 kg · déficit calórico · sin restricciones de comida (legumbres, brócoli y judías verdes permitidos)</p>
+  <div class="targets">
+    <span>≈ 1.550 kcal/día</span><span>Proteína ≥ 100 g (suelo)</span><span>Grasa ≤ 55 g (techo)</span>
+  </div>
+</header>
+
+<nav>
+  <a href="#lun">Lun</a><a href="#mar">Mar</a><a href="#mie">Mié</a><a href="#jue">Jue</a><a href="#vie">Vie</a><a href="#sab">Sáb</a><a href="#dom">Dom</a><a href="#compra">Compra</a><a href="#prep">Prep</a>
+</nav>
+
+<main>
+
+<!-- ============ LUNES ============ -->
+<section class="day" id="lun">
+  <h2>Lunes</h2><p class="daysub">Pollo al horno con arroz y crema de calabacín.</p>
+
+  <div class="card"><h3>Tostadas con tomate y pavo <span class="tag">Desayuno</span></h3>
+    <p>2 tostadas de pan integral + tomate rallado + 4 lonchas de pavo + 1 fruta (naranja o manzana).</p>
+    <div class="macros"><span class="kcal">380 kcal</span><span>P 24 g</span><span>C 56 g</span><span>G 7 g</span></div>
+  </div>
+
+  <div class="card"><h3>Pollo al horno con arroz y verduras <span class="tag">Comida</span></h3>
+    <p>180 g de pechuga al horno con limón y pimentón. 60 g de arroz (en seco). Calabacín y zanahoria al vapor o salteados con 10 ml de AOVE.</p>
+    <div class="macros"><span class="kcal">580 kcal</span><span>P 47 g</span><span>C 62 g</span><span>G 13 g</span></div>
+  </div>
+
+  <div class="card"><h3>Queso fresco batido + fruta <span class="tag">Merienda</span></h3>
+    <p>200 g de queso fresco batido 0 % + 1 pieza de fruta.</p>
+    <div class="macros"><span class="kcal">160 kcal</span><span>P 15 g</span><span>C 17 g</span><span>G 1 g</span></div>
+  </div>
+
+  <div class="card"><h3>Crema de calabacín + tortilla francesa <span class="tag">Cena</span></h3>
+    <p>Crema de calabacín (2 calabacines + cebolla, triturados). Tortilla francesa de 2 huevos.</p>
+    <div class="macros"><span class="kcal">430 kcal</span><span>P 24 g</span><span>C 30 g</span><span>G 22 g</span></div>
+  </div>
+
+  <div class="daytotal"><span>Total lunes</span><span>≈ 1.550 kcal · P 110 g</span></div>
+</section>
+
+<!-- ============ MARTES ============ -->
+<section class="day" id="mar">
+  <h2>Martes</h2><p class="daysub">Lentejas estofadas con huevo; cena de revuelto.</p>
+
+  <div class="card"><h3>Yogur con avena y fruta <span class="tag">Desayuno</span></h3>
+    <p>250 g de yogur natural desnatado + 40 g de copos de avena + 1 fruta.</p>
+    <div class="macros"><span class="kcal">360 kcal</span><span>P 17 g</span><span>C 56 g</span><span>G 7 g</span></div>
+  </div>
+
+  <div class="card"><h3>Lentejas estofadas con verduras y huevo <span class="tag">Comida</span></h3>
+    <p>300 g de lentejas cocidas estofadas con cebolla, zanahoria y pimiento + 2 huevos duros. 10 ml de AOVE.</p>
+    <div class="macros"><span class="kcal">590 kcal</span><span>P 38 g</span><span>C 62 g</span><span>G 17 g</span></div>
+  </div>
+
+  <div class="card"><h3>Queso fresco batido + fruta <span class="tag">Merienda</span></h3>
+    <p>200 g de queso fresco batido 0 % + 1 fruta.</p>
+    <div class="macros"><span class="kcal">160 kcal</span><span>P 15 g</span><span>C 17 g</span><span>G 1 g</span></div>
+  </div>
+
+  <div class="card"><h3>Revuelto de setas y espinacas <span class="tag">Cena</span></h3>
+    <p>Revuelto de 1 huevo + 150 g de claras con 200 g de setas y espinacas salteadas con ajo. 1 tostada integral.</p>
+    <div class="macros"><span class="kcal">360 kcal</span><span>P 32 g</span><span>C 24 g</span><span>G 12 g</span></div>
+  </div>
+
+  <div class="daytotal"><span>Total martes</span><span>≈ 1.470 kcal · P 102 g</span></div>
+</section>
+
+<!-- ============ MIÉRCOLES ============ -->
+<section class="day" id="mie">
+  <h2>Miércoles</h2><p class="daysub">Merluza con patatas y salmón al horno con brócoli.</p>
+
+  <div class="card"><h3>Tortilla con tostadas y tomate <span class="tag">Desayuno</span></h3>
+    <p>Tortilla de 1 huevo + 150 g de claras. 2 tostadas integrales + tomate.</p>
+    <div class="macros"><span class="kcal">360 kcal</span><span>P 28 g</span><span>C 34 g</span><span>G 12 g</span></div>
+  </div>
+
+  <div class="card"><h3>Merluza con patatas y ensalada <span class="tag">Comida</span></h3>
+    <p>200 g de merluza a la plancha con limón. 300 g de patata cocida + ensalada de lechuga y tomate con 5 ml de AOVE.</p>
+    <div class="macros"><span class="kcal">520 kcal</span><span>P 45 g</span><span>C 50 g</span><span>G 10 g</span></div>
+  </div>
+
+  <div class="card"><h3>Yogur + fruta <span class="tag">Merienda</span></h3>
+    <p>250 g de yogur natural desnatado + 1 fruta.</p>
+    <div class="macros"><span class="kcal">140 kcal</span><span>P 11 g</span><span>C 18 g</span><span>G 0 g</span></div>
+  </div>
+
+  <div class="card"><h3>Salmón al horno con brócoli <span class="tag">Cena</span></h3>
+    <p>150 g de salmón al horno (15 min a 200 °C) con limón. Brócoli al vapor o asado y espárragos.</p>
+    <div class="macros"><span class="kcal">440 kcal</span><span>P 32 g</span><span>C 24 g</span><span>G 22 g</span></div>
+  </div>
+
+  <div class="daytotal"><span>Total miércoles</span><span>≈ 1.460 kcal · P 116 g</span></div>
+</section>
+
+<!-- ============ JUEVES ============ -->
+<section class="day" id="jue">
+  <h2>Jueves</h2><p class="daysub">Pasta integral con atún y sopa de verduras con merluza.</p>
+
+  <div class="card"><h3>Gachas de avena con plátano <span class="tag">Desayuno</span></h3>
+    <p>45 g de copos de avena cocidos con leche desnatada + 1 plátano + canela.</p>
+    <div class="macros"><span class="kcal">370 kcal</span><span>P 14 g</span><span>C 60 g</span><span>G 8 g</span></div>
+  </div>
+
+  <div class="card"><h3>Pasta integral con atún y verduras <span class="tag">Comida</span></h3>
+    <p>70 g de pasta integral (en seco) + 1 lata de atún al natural + pimiento, cebolla y tomate. 10 ml de AOVE y orégano.</p>
+    <div class="macros"><span class="kcal">570 kcal</span><span>P 38 g</span><span>C 70 g</span><span>G 14 g</span></div>
+  </div>
+
+  <div class="card"><h3>Queso fresco batido + fruta <span class="tag">Merienda</span></h3>
+    <p>200 g de queso fresco batido 0 % + 1 fruta.</p>
+    <div class="macros"><span class="kcal">160 kcal</span><span>P 15 g</span><span>C 17 g</span><span>G 1 g</span></div>
+  </div>
+
+  <div class="card"><h3>Sopa de verduras + merluza a la plancha <span class="tag">Cena</span></h3>
+    <p>Sopa de verduras casera (calabacín, zanahoria, puerro, apio) + 180 g de merluza a la plancha con limón.</p>
+    <div class="macros"><span class="kcal">360 kcal</span><span>P 40 g</span><span>C 24 g</span><span>G 9 g</span></div>
+  </div>
+
+  <div class="daytotal"><span>Total jueves</span><span>≈ 1.460 kcal · P 107 g</span></div>
+</section>
+
+<!-- ============ VIERNES ============ -->
+<section class="day" id="vie">
+  <h2>Viernes</h2><p class="daysub">Pavo con puré y judías verdes; pechuga con ensalada.</p>
+
+  <div class="card"><h3>Revuelto de huevos con espinacas <span class="tag">Desayuno</span></h3>
+    <p>Revuelto de 2 huevos con espinacas frescas. 1 tostada integral + 1 fruta.</p>
+    <div class="macros"><span class="kcal">340 kcal</span><span>P 21 g</span><span>C 28 g</span><span>G 16 g</span></div>
+  </div>
+
+  <div class="card"><h3>Pavo con puré de patata y judías verdes <span class="tag">Comida</span></h3>
+    <p>180 g de filetes de pavo a la plancha. 250 g de puré de patata (con leche desnatada) + judías verdes salteadas con ajo y 10 ml de AOVE.</p>
+    <div class="macros"><span class="kcal">540 kcal</span><span>P 45 g</span><span>C 52 g</span><span>G 12 g</span></div>
+  </div>
+
+  <div class="card"><h3>Yogur + fruta <span class="tag">Merienda</span></h3>
+    <p>250 g de yogur natural desnatado + 1 fruta.</p>
+    <div class="macros"><span class="kcal">140 kcal</span><span>P 11 g</span><span>C 18 g</span><span>G 0 g</span></div>
+  </div>
+
+  <div class="card"><h3>Pechuga a la plancha + ensalada grande <span class="tag">Cena</span></h3>
+    <p>150 g de pechuga a la plancha. Ensalada grande de lechuga, tomate y pepino + 1 tostada. Aliño: limón y 5 ml de AOVE.</p>
+    <div class="macros"><span class="kcal">380 kcal</span><span>P 41 g</span><span>C 22 g</span><span>G 11 g</span></div>
+  </div>
+
+  <div class="daytotal"><span>Total viernes</span><span>≈ 1.470 kcal · P 118 g</span></div>
+</section>
+
+<!-- ============ SÁBADO ============ -->
+<section class="day" id="sab">
+  <h2>Sábado</h2><p class="daysub">Ensalada de garbanzos y berenjena rellena.</p>
+
+  <div class="card"><h3>Yogur con avena y fruta <span class="tag">Desayuno</span></h3>
+    <p>250 g de yogur natural + 40 g de avena + 1 fruta.</p>
+    <div class="macros"><span class="kcal">360 kcal</span><span>P 17 g</span><span>C 56 g</span><span>G 7 g</span></div>
+  </div>
+
+  <div class="card"><h3>Ensalada de garbanzos con atún y huevo <span class="tag">Comida</span></h3>
+    <p>200 g de garbanzos cocidos + 1 lata de atún + 1 huevo duro + tomate, cebolla y pimiento. Aliño de limón y 10 ml de AOVE.</p>
+    <div class="macros"><span class="kcal">560 kcal</span><span>P 52 g</span><span>C 52 g</span><span>G 18 g</span></div>
+  </div>
+
+  <div class="card"><h3>Queso fresco batido + fruta <span class="tag">Merienda</span></h3>
+    <p>200 g de queso fresco batido 0 % + 1 fruta.</p>
+    <div class="macros"><span class="kcal">160 kcal</span><span>P 15 g</span><span>C 17 g</span><span>G 1 g</span></div>
+  </div>
+
+  <div class="card"><h3>Berenjena rellena + ensalada <span class="tag">Cena</span></h3>
+    <p>½–1 berenjena asada rellena de tomate, cebolla y pavo picado (100 g), gratinada con queso light. Ensalada verde.</p>
+    <div class="macros"><span class="kcal">350 kcal</span><span>P 24 g</span><span>C 34 g</span><span>G 13 g</span></div>
+  </div>
+
+  <div class="daytotal"><span>Total sábado</span><span>≈ 1.500 kcal · P 108 g</span></div>
+</section>
+
+<!-- ============ DOMINGO ============ -->
+<section class="day" id="dom">
+  <h2>Domingo</h2><p class="daysub">Bacalao al horno y gambas al ajillo.</p>
+
+  <div class="card"><h3>Pan con queso fresco y fruta <span class="tag">Desayuno</span></h3>
+    <p>2 rebanadas de pan integral con queso fresco + 1 fruta.</p>
+    <div class="macros"><span class="kcal">350 kcal</span><span>P 18 g</span><span>C 42 g</span><span>G 10 g</span></div>
+  </div>
+
+  <div class="card"><h3>Bacalao al horno con patatas y verduras <span class="tag">Comida</span></h3>
+    <p>200 g de lomo de bacalao al horno (15 min a 190 °C) con 300 g de patata en dados y pimiento, cebolla y tomate. 10 ml de AOVE y perejil.</p>
+    <div class="macros"><span class="kcal">510 kcal</span><span>P 47 g</span><span>C 45 g</span><span>G 10 g</span></div>
+  </div>
+
+  <div class="card"><h3>Yogur + fruta <span class="tag">Merienda</span></h3>
+    <p>250 g de yogur natural desnatado + 1 fruta.</p>
+    <div class="macros"><span class="kcal">140 kcal</span><span>P 11 g</span><span>C 18 g</span><span>G 0 g</span></div>
+  </div>
+
+  <div class="card"><h3>Gambas al ajillo con calabacín <span class="tag">Cena</span></h3>
+    <p>200 g de gambas peladas al ajillo con guindilla y perejil. Calabacín salteado + 150 g de patata en dados. 5 ml de AOVE.</p>
+    <div class="macros"><span class="kcal">380 kcal</span><span>P 38 g</span><span>C 22 g</span><span>G 12 g</span></div>
+  </div>
+
+  <div class="daytotal"><span>Total domingo</span><span>≈ 1.450 kcal · P 114 g</span></div>
+</section>
+
+<!-- ============ COMPRA ============ -->
+<h2 class="sec" id="compra">Lista de la compra</h2>
+<div class="grocery">
+  <p style="margin:0 0 .3rem;font-size:.88rem;color:var(--muted)">Revisa despensa antes de comprar; marca lo que ya tengas en casa.</p>
+
+  <h3>Carnicería y pollería</h3>
+  <ul class="shop">
+    <li><label><input type="checkbox"> Pechuga de pollo</label><span class="qty">500 g (L 180, V 150)</span></li>
+    <li><label><input type="checkbox"> Filetes de pavo</label><span class="qty">200 g (V) + 100 g picado (S)</span></li>
+    <li><label><input type="checkbox"> Pavo en lonchas</label><span class="qty">1 paquete (L)</span></li>
+  </ul>
+
+  <h3>Pescadería</h3>
+  <ul class="shop">
+    <li><label><input type="checkbox"> Merluza</label><span class="qty">400 g (X 200, J 180) — congelada vale</span></li>
+    <li><label><input type="checkbox"> Bacalao (lomo)</label><span class="qty">200 g (D)</span></li>
+    <li><label><input type="checkbox"> Salmón</label><span class="qty">150 g (X)</span></li>
+    <li><label><input type="checkbox"> Gambas peladas</label><span class="qty">200 g (D)</span></li>
+  </ul>
+
+  <h3>Conservas</h3>
+  <ul class="shop">
+    <li><label><input type="checkbox"> Atún en lata (natural)</label><span class="qty">2 latas (J, S)</span></li>
+    <li><label><input type="checkbox"> Garbanzos cocidos</label><span class="qty">1 bote (S)</span></li>
+    <li><label><input type="checkbox"> Lentejas (secas o cocidas)</label><span class="qty">300 g cocidas (M)</span></li>
+    <li><label><input type="checkbox"> Tomate triturado</label><span class="qty">1 brik (J, S)</span></li>
+  </ul>
+
+  <h3>Lácteos y huevos</h3>
+  <ul class="shop">
+    <li><label><input type="checkbox"> Yogur natural desnatado</label><span class="qty">5 (M, X, V, S, D)</span></li>
+    <li><label><input type="checkbox"> Queso fresco batido 0 %</label><span class="qty">4 (L, M, J, S)</span></li>
+    <li><label><input type="checkbox"> Queso fresco / queso light</label><span class="qty">1 tarrina (D, S)</span></li>
+    <li><label><input type="checkbox"> Leche desnatada</label><span class="qty">1 (J, V)</span></li>
+    <li><label><input type="checkbox"> Huevos</label><span class="qty">1 docena (~10 usos)</span></li>
+    <li><label><input type="checkbox"> Claras líquidas</label><span class="qty">1 brick 500 ml (X, M)</span></li>
+  </ul>
+
+  <h3>Frutería y verdura</h3>
+  <ul class="shop">
+    <li><label><input type="checkbox"> Fruta variada (manzanas, naranjas, plátanos)</label><span class="qty">~8 piezas</span></li>
+    <li><label><input type="checkbox"> Tomates</label><span class="qty">6</span></li>
+    <li><label><input type="checkbox"> Calabacines</label><span class="qty">4 (L, J, D)</span></li>
+    <li><label><input type="checkbox"> Zanahorias</label><span class="qty">3 (L, M, J)</span></li>
+    <li><label><input type="checkbox"> Cebollas</label><span class="qty">3</span></li>
+    <li><label><input type="checkbox"> Pimientos</label><span class="qty">3 (M, J, D)</span></li>
+    <li><label><input type="checkbox"> Puerro y apio</label><span class="qty">1 c/u (J)</span></li>
+    <li><label><input type="checkbox"> Espinacas</label><span class="qty">1 bolsa (M, V)</span></li>
+    <li><label><input type="checkbox"> Setas</label><span class="qty">200 g (M)</span></li>
+    <li><label><input type="checkbox"> Brócoli y espárragos</label><span class="qty">1 c/u (X)</span></li>
+    <li><label><input type="checkbox"> Judías verdes</label><span class="qty">250 g (V)</span></li>
+    <li><label><input type="checkbox"> Lechuga</label><span class="qty">1–2 piezas (X, V, S)</span></li>
+    <li><label><input type="checkbox"> Berenjena</label><span class="qty">1 (S)</span></li>
+    <li><label><input type="checkbox"> Pepino</label><span class="qty">1 (V)</span></li>
+    <li><label><input type="checkbox"> Patatas</label><span class="qty">1 kg (X, V, D)</span></li>
+    <li><label><input type="checkbox"> Limones</label><span class="qty">2</span></li>
+    <li><label><input type="checkbox"> Ajo y perejil</label><span class="qty">1 c/u</span></li>
+  </ul>
+
+  <h3>Despensa (revisa antes de comprar)</h3>
+  <ul class="shop">
+    <li><label><input type="checkbox"> Copos de avena</label><span class="qty">si falta (M, J, S)</span></li>
+    <li><label><input type="checkbox"> Arroz</label><span class="qty">si falta (L)</span></li>
+    <li><label><input type="checkbox"> Pasta integral</label><span class="qty">si falta (J)</span></li>
+    <li><label><input type="checkbox"> Pan integral de molde</label><span class="qty">1 paquete</span></li>
+    <li><label><input type="checkbox"> AOVE, pimentón, orégano, canela</label><span class="qty">si falta</span></li>
+  </ul>
+</div>
+
+<!-- ============ PREP ============ -->
+<h2 class="sec" id="prep">Preparación y notas</h2>
+<div class="notes">
+  <ul>
+    <li><strong>Descongelar:</strong> merluza del miércoles → nevera martes noche; gambas del domingo → nevera sábado noche. Si el bacalao es salado, desálalo 24 h antes.</li>
+    <li><strong>Calcio:</strong> con yogures, queso y leche desnatada ya queda cubierto — importante a los 59 años para el hueso.</li>
+    <li><strong>Fibra:</strong> legumbres (lentejas, garbanzos) y verduras ayudan a saciarte con el déficit; si no estás acostumbrada, empieza con media ración.</li>
+    <li><strong>Proteína:</strong> objetivo ≥ 100 g para conservar masa muscular; si un día te quedas corta, añade 1 yogur o unas claras.</li>
+    <li><strong>Bebe agua</strong> (1,5–2 litros/día) y mantén el café/infusiones sin azúcar.</li>
+  </ul>
+</div>
+
+<footer>
+  Objetivo calculado: TMB (Mifflin-St Jeor) ≈ 1.656 kcal; gasto total con actividad ligera ≈ 2.150 kcal; déficit de ~600 kcal → ~1.550 kcal/día (~0,5 kg/semana). Estimaciones de macros moderadas — verifica con etiquetas. Plan editable. Generado manualmente para la semana 37 de 2026.
+</footer>
+
+</main>
+</body>
+</html>
