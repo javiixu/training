@@ -12,6 +12,9 @@ Notas:
 - El formato de estos HTML se irá refinando iterativamente; la prioridad ahora
   misma es tener el flujo de generación, no el diseño final.
 - Al generar una nueva semana NO se sobreescriben las anteriores (histórico semanal).
+- La lista de la compra de cada HTML lleva un pequeño `<script>` de `localStorage`
+  (namespace `compra-<persona>-<semana>`) para que los checkbox marcados se
+  conserven entre visitas. Mantener ese script en cada semana nueva.
 - Skills del proyecto instaladas en `.opencode/skills/` (opencode las
   auto-carga; ver sección siguiente).
 

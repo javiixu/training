@@ -348,5 +348,21 @@
 </footer>
 
 </main>
+
+<script>
+(function(){
+  var NS = 'compra-filo-w37';
+  document.querySelectorAll('ul.shop input[type=checkbox]').forEach(function(cb, i){
+    if (cb.disabled) return;
+    var label = cb.closest('li') && cb.closest('li').querySelector('label');
+    var name = label ? label.textContent.replace(/\s+/g,' ').trim() : ('item-' + i);
+    var key = NS + ':' + name;
+    try { cb.checked = localStorage.getItem(key) === '1'; } catch(e){}
+    cb.addEventListener('change', function(){
+      try { localStorage.setItem(key, cb.checked ? '1' : '0'); } catch(e){}
+    });
+  });
+})();
+</script>
 </body>
 </html>
